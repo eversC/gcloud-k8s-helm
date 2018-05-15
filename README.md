@@ -15,7 +15,7 @@ There is no authing performed automatically in the image. This must be done via 
 
 ## versioning
 
-The versions/tags will match those of the base image, `google/cloud-sdk`.
+The versions/tags will match those of the base image, `google/cloud-sdk`, appended with the Helm version (so that users can match this with the version of Tiller they're running).
 
 None of the gcloud components (including `kubectl`) are upgraded.
 

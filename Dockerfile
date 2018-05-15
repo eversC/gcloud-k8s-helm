@@ -4,7 +4,7 @@ MAINTAINER Chris Every <eversmcc@gmail.com>
 
 RUN apk update && apk add ca-certificates && apk add openssl && rm -rf /var/cache/apk/*
 
-ENV HELM_VERSION v2.9.0
+ENV HELM_VERSION v2.9.1
 ENV HELM_GCS_PLUGIN_VERSION 0.1.4
 
 RUN adduser -S gkh gkh

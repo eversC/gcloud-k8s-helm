@@ -1,4 +1,4 @@
-FROM google/cloud-sdk:198.0.0-alpine
+FROM google/cloud-sdk:alpine
 
 MAINTAINER Chris Every <eversmcc@gmail.com>
 

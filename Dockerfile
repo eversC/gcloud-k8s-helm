@@ -19,3 +19,4 @@ USER gkh
 
 RUN helm init --client-only
 RUN helm plugin install https://github.com/nouney/helm-gcs --version $HELM_GCS_PLUGIN_VERSION
+RUN helm plugin install https://github.com/ovotech/helm-bulk

@@ -14,6 +14,8 @@ RUN gcloud components install kubectl -q --no-user-output-enabled
 RUN curl https://raw.githubusercontent.com/kubernetes/helm/master/scripts/get > get_helm.sh
 RUN chmod 700 get_helm.sh
 RUN ./get_helm.sh --version $HELM_VERSION
+RUN mkdir helm-bulk-plugin
+ENV HELM_HOME /home/gkh/.helm/
 
 USER gkh
 

@@ -5,7 +5,7 @@ MAINTAINER Chris Every <eversmcc@gmail.com>
 RUN apk update && apk add ca-certificates && apk add openssl && rm -rf /var/cache/apk/*
 
 ENV HELM_VERSION v2.9.0
-ENV HELM_GCS_PLUGIN_VERSION 0.1.4
+ENV HELM_GCS_PLUGIN_VERSION 0.2.1
 
 RUN adduser -S gkh gkh
 
@@ -20,5 +20,5 @@ ENV HELM_HOME /home/gkh/.helm/
 USER gkh
 
 RUN helm init --client-only
-RUN helm plugin install https://github.com/nouney/helm-gcs --version $HELM_GCS_PLUGIN_VERSION
+RUN helm plugin install https://github.com/hayorov/helm-gcs --version $HELM_GCS_PLUGIN_VERSION
 RUN helm plugin install https://github.com/ovotech/helm-bulk
